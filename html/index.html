@@ -12,16 +12,16 @@
   <body>
     <div class="jumbotron"> <!-- HEADER -->
       <div class="jumbo">
-        <a id="logo" href="index.html"><h1>Vacation Planner</h1></a>
+        <h1>Vacation Planner</h1>
         <p>
-          Use this tool to help you decide where to spend your time off!
+          A handy tool for the restless and indecisive
         </p>
       </div>
     </div> <!-- END OF HEADER -->
 
     <div class="container"> <!-- FORM -->
-      <h2>Where would you like to go?</h2>
       <form id="survey">
+        <h2>Where would you like to go?</h2>
         <label for="climate">What sort of climate do you prefer?</label>
         <select id="climate">
           <option value="HOT">Gimme that warm sun!</option>
@@ -40,11 +40,11 @@
         <label for="budget">How's your budget?</label>
         <select id="budget">
           <option value="RICH">Jumbo, baby</option>
-          <option value="STINGY">Pithy</option>
+          <option value="STINGY">It's okaaaaaay</option>
         </select>
         <label for="food">What sort of food do you prefer?</label>
         <select id="food">
-          <option value="FANCY">Five star cuisine</option>
+          <option value="FANCY">Restaurant food every day</option>
           <option value="GRUB">Whatever's edible</option>
         </select>
         <label for="house">Do you like leaving your house?</label>
@@ -58,6 +58,7 @@
           <p>
             You would probably like <span id="location"></span>!  Better get packing!
           </p>
+          <!-- <button type="button" class="btn btn-warning">Reset!</button> -->
       </div><!-- END OF RESULT -->
     </div> <!-- END OF FORM -->
 

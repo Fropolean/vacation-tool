@@ -19,13 +19,15 @@ $(function() {
       location = "to stay home";
     } else {
           // leave home
-        if (region === "URBAN") { //urban
+        if (region === "URBAN") {
             //climate
-          if (climate === "HOT") { //urban hot
+          if (climate === "HOT") {
               //terrain
-            if (terrain === "BEACH") { //urban hot beach
+            if (terrain === "BEACH") {
                 //food
-              if (food ===  "FANCY") { //urban hot beach fancy
+              if (food ===  "FANCY" && count === 1) {//urban hot beach fancy loaded
+                location = "a cruise in the Galapagos";
+              } else if (food === "FANCY") { //urban hot beach fancy
                 location = "Maui";
               } else { //urban hot beach grub
                 location = "Venice Beach, California";
@@ -33,10 +35,12 @@ $(function() {
               //end terrain BEACH
             } else { //terrain PEAKS
                   //food
-                if (food ===  "FANCY") { //urban hot peaks fancy
-                  location = "Phoenix, AZ";
+                if (food ===  "FANCY" && count === 1) { //urban hot peaks fancy loaded
+                  location = "Siena, Italy";
+                } else if (food === "FANCY") { //urban hot peaks fancy
+                  location = "Andorra";
                 } else { //urban hot peaks grub
-                  location = "New Mexico";
+                  location = "Albuquerque, New Mexico";
                 }
               }
             //END CLIMATE HOT
@@ -45,7 +49,9 @@ $(function() {
                 //terrain
               if (terrain === "BEACH") { //urban cold beach
                   //food
-                if (food ===  "FANCY") { //urban cold beach fancy
+                if (food ===  "FANCY" && count === 1) {//urban cold beach fancy loaded
+                  location = "Isle of Man";
+                } else if (food === "FANCY"){ //urban cold beach fancy
                   location = "Punta Arenas, Chile";
                 } else { //urban cold beach grub
                   location = "Reykjavik, Iceland";
@@ -53,8 +59,10 @@ $(function() {
 
               } else { //terrain PEAKS
                     //food
-                  if (food ===  "FANCY") { //urban cold peaks fancy
+                  if (food ===  "FANCY" && count === 1) { //urban cold peaks fancy loaded
                     location = "the Swiss Alps";
+                  } else if (food === "FANCY") { //urban cold peaks fancy
+                    location = "Whistler, BC";
                   } else { //urban cold peaks grub
                     location = "it in Loveland, CO";
                   }
@@ -63,20 +71,24 @@ $(function() {
           //urban END
           //rural START
         } else { //rural
-          if (climate === "HOT") { //rural hot
+          if (climate === "HOT") {
               //terrain
-            if (terrain === "BEACH") { //rural hot beach
+            if (terrain === "BEACH") {
                 //food
-              if (food ===  "FANCY") { //rural hot beach fancy
+              if (food ===  "FANCY" && count === 1) { //rural hot beach fancy loaded
                 location = "the Caribbean";
-              } else { //rural hot beach grub
+              } else if (food === "FANCY") { //rural hot beach fancy
                 location = "Madagascar";
+              } else { //rural hot beach grub
+                location = "West Virginia";
               }
 
             } else { //terrain PEAKS
                   //food
-                if (food ===  "FANCY") { //rural hot peaks fancy
+                if (food ===  "FANCY" && count === 1) { //rural hot peaks fancy loaded
                   location = "Hakone, Japan";
+                } else if (food === "FANCY") { //rural hot peaks fancy
+                  location = "Carpathian Mountains, Romania";
                 } else { //rural hot peaks grub
                   location = "Kenya";
                 }
@@ -86,36 +98,28 @@ $(function() {
                 //terrain
               if (terrain === "BEACH") { //rural cold beach
                   //food
-                if (food ===  "FANCY") { //rural cold beach fancy
+                if (food ===  "FANCY" && count === 1) { //rural cold beach fancy loaded
                   location = "Antarctica";
+                } else if (food === "FANCY") { //rural cold beach fancy
+                  location = "Greenland";
                 } else { //rural cold beach grub
                   location = "the Kenai Peninsula";
                 }
 
               } else { //terrain PEAKS
                     //food
-                  if (food ===  "FANCY") { //rural cold peaks fancy
+                  if (food ===  "FANCY" && count === 1) { //rural cold peaks fancy loaded
+                    location = "Patagonia";
+                  } else if (food === "FANCY") { //rural cold peaks fancy
                     location = "Denali National Park, Alaska";
                   } else { //rural cold peaks grub
                     location = "Stora Sjofallet National Park, Sweden";
                   }
                 }
               }
+            }
+          }
 
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-    }
     $("#location").text(location);
     $(".result").show();
 
