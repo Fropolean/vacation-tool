@@ -6,14 +6,16 @@
     <script src="../jquery-1.12.0.js"></script>
     <script src="../scripts.js"></script>
     <title>Vacation Tool</title>
-    <link rel="icon" type="image/png" href="https://openclipart.org/image/300px/svg_to_png/220311/fart.png">
+    <link rel="icon" type="image/png" href="https://openclipart.org/image/300px/svg_to_png/26331/aiga-departures-bg.png">
   </head>
   <body>
     <div class="jumbotron"> <!-- HEADER -->
-      <a id="logo" href="index.html"><h1>Vacation Planner</h1></a>
-      <p>
-        Use this tool to help you decide where to spend your time off!
-      </p>
+      <div class="jumbo">
+        <a id="logo" href="index.html"><h1>Vacation Planner</h1></a>
+        <p>
+          Use this tool to help you decide where to spend your time off!
+        </p>
+      </div>
     </div> <!-- END OF HEADER -->
 
     <div class="container"> <!-- FORM -->
@@ -31,7 +33,7 @@
         </select>
         <label for="terrain">Coastal or mountainous?</label>
         <select id="terrain">
-          <option value="BEACH">Toes in the sand!</option>
+          <option value="BEACH">The ocean's where it's at</option>
           <option value="PEAKS">Let's go hiking!</option>
         </select>
         <label for="drink">Drink of choice?</label>
@@ -46,13 +48,13 @@
         </select>
         <button type="submit" class="btn btn-danger">Submit!</button>
       </form>
-
+      <div class="result center"><!-- RESULT -->
+          <p>
+            You would probably like <span id="location"></span>!  Better get packing!
+          </p>
+      </div><!-- END OF RESULT -->
     </div> <!-- END OF FORM -->
-    <div class="result center"><!-- RESULT -->
-        <p>
-          You would probably like <span id="location"></span>!  Better get packing!
-        </p>
-    </div><!-- END OF RESULT -->
+
 
     <div class="footer center"> <!-- FOOTER -->
       <p>

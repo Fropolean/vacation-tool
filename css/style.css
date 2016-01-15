@@ -1,3 +1,9 @@
+body {
+  color: #4d4d4d;
+  background-image: url(http://www.psdgraphics.com/file/grunge-world-map.jpg);
+  background-size: cover;
+  font-family: monospace;
+}
 .result {
   display: none;
 }
@@ -18,16 +24,30 @@ label {
 }
 
 button {
-  margin-top: 1em
+  margin-top: 1em;
 }
 
 .jumbotron {
   text-align: center;
+  /*background-color: #ffc24d;*/
+  background-image: url(http://thumbs.dreamstime.com/x/seamless-travel-pattern-17260459.jpg);
 }
 
 .container {
+  background-color: #b3b3b3;
+  background-image: url(http://kairos.technorhetoric.net/17.3/topoi/neal-et-al/main/images/bkg_img_s1.png);
+  background-size: cover;
   margin: auto;
-  width: 50%;
+  width: 40%;
   border: 3px solid #cc6600;
   padding: 10px;
+}
+
+.jumbo {
+  background-color: #ffc24d;
+  color: #806000;
+}
+
+a {
+  color: #806000;
 }
