@@ -1,0 +1,33 @@
+.result {
+  display: none;
+}
+
+.footer {
+  margin-top: 30em;
+}
+ .center {
+   text-align: center;
+ }
+
+select {
+  display: block;
+}
+
+label {
+  display: block;
+}
+
+button {
+  margin-top: 1em
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #cc6600;
+  padding: 10px;
+}
