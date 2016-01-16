@@ -13,7 +13,7 @@ $(function() {
     if (budget === "RICH") {
       count += 1;
     }
-alert(count);
+
     if (house === "NO") {
       location = "to stay home";
     } else {
