@@ -37,13 +37,12 @@ button {
 }
 
 .container {
-  background-color: #b3b3b3;
   background-image: url(http://kairos.technorhetoric.net/17.3/topoi/neal-et-al/main/images/bkg_img_s1.png);
   background-size: cover;
   background-position: center;
   padding: 30px;
-  width: 700px;
-  height: 450px;
+  width: 715px;
+  height: 470px;
   border: 10px solid #cc6600;
   border-radius: 10px;
   padding: 10px;

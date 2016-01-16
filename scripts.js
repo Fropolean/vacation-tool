@@ -13,8 +13,7 @@ $(function() {
     if (budget === "RICH") {
       count += 1;
     }
-
-
+alert(count);
     if (house === "NO") {
       location = "to stay home";
     } else {
@@ -25,7 +24,7 @@ $(function() {
               //terrain
             if (terrain === "BEACH") {
                 //food
-              if (food ===  "FANCY" && count === 1) {//urban hot beach fancy loaded
+              if (food ===  "FANCY" && count === 1) { //urban hot beach fancy loaded
                 location = "a cruise in the Galapagos";
               } else if (food === "FANCY") { //urban hot beach fancy
                 location = "Maui";
@@ -49,10 +48,10 @@ $(function() {
                 //terrain
               if (terrain === "BEACH") { //urban cold beach
                   //food
-                if (food ===  "FANCY" && count === 1) {//urban cold beach fancy loaded
-                  location = "Isle of Man";
+                if (food ===  "FANCY" && count === 1) { //urban cold beach fancy loaded
+                  location = "the Isle of Man";
                 } else if (food === "FANCY"){ //urban cold beach fancy
-                  location = "Punta Arenas, Chile";
+                  location = "it in Punta Arenas, Chile";
                 } else { //urban cold beach grub
                   location = "Reykjavik, Iceland";
                 }
@@ -108,12 +107,12 @@ $(function() {
 
               } else { //terrain PEAKS
                     //food
-                  if (food ===  "FANCY" && count === 1) { //rural cold peaks fancy loaded
+                  if (food === "FANCY" && count === 1) { //rural cold peaks fancy loaded
                     location = "Patagonia";
                   } else if (food === "FANCY") { //rural cold peaks fancy
-                    location = "Denali National Park, Alaska";
-                  } else { //rural cold peaks grub
                     location = "Stora Sjofallet National Park, Sweden";
+                  } else { //rural cold peaks grub
+                    location = "Denali National Park, Alaska";
                   }
                 }
               }
@@ -122,9 +121,6 @@ $(function() {
 
     $("#location").text(location);
     $(".result").show();
-
-
-
 
     event.preventDefault();
 
