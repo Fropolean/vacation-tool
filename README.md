@@ -40,4 +40,4 @@ CSS
 
 This software is licensed under the MIT license
 
-Copyright (c) 2016 Marika Allely
+Copyright (c) 2016 Marika Allely (Our Lady of Light)
